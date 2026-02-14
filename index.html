@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="F&R Services - Refrigeración y Aire Acondicionado. Instalación, mantenimiento y reparación de equipos de climatización residencial, comercial e industrial.">
+    <meta name="keywords" content="aire acondicionado, refrigeración, HVAC, instalación, mantenimiento, reparación, Venezuela">
+    <title>F&R Services | Refrigeración & Aire Acondicionado</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo-azul.png">
+</head>
+<body>
+
+    <!-- ============ PRELOADER ============ -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <img src="img/logo-azul.png" alt="F&R Services">
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+            <p class="preloader-text">Cargando...</p>
+        </div>
+    </div>
+
+    <!-- ============ CURSOR CUSTOM ============ -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- ============ PARTICLES BACKGROUND ============ -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <img src="img/logo-azul.png" alt="F&R Services" class="logo-img">
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link" data-section="nosotros">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link" data-section="servicios">Servicios</a></li>
+                <li><a href="#galeria" class="nav-link" data-section="galeria">Galería</a></li>
+                <li><a href="#marcas" class="nav-link" data-section="marcas">Marcas</a></li>
+                <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/584128823" class="nav-cta" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Cotizar
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-gradient"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll" data-animation="fadeInDown">
+                <i class="fas fa-snowflake"></i>
+                <span>Expertos en Climatización</span>
+            </div>
+
+            <h1 class="hero-title animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                <span class="hero-title-line">Soluciones en</span>
+                <span class="hero-title-accent">
+                    <span class="text-gradient">Refrigeración</span>
+                </span>
+                <span class="hero-title-line">& Aire Acondicionado</span>
+            </h1>
+
+            <p class="hero-subtitle animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                Instalación, mantenimiento y reparación de equipos de climatización 
+                residencial, comercial e industrial con la más alta calidad y profesionalismo.
+            </p>
+
+            <div class="hero-buttons animate-on-scroll" data-animation="fadeInUp" data-delay="600">
+                <a href="#servicios" class="btn btn-primary btn-glow">
+                    <span>Nuestros Servicios</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contacto" class="btn btn-outline">
+                    <span>Contactar</span>
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+
+            <div class="hero-stats animate-on-scroll" data-animation="fadeInUp" data-delay="800">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Proyectos</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Años de Experiencia</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Desliza hacia abajo</span>
+        </div>
+
+        <!-- Floating elements for decoration -->
+        <div class="hero-float hero-float-1"><i class="fas fa-snowflake"></i></div>
+        <div class="hero-float hero-float-2"><i class="fas fa-wind"></i></div>
+        <div class="hero-float hero-float-3"><i class="fas fa-temperature-low"></i></div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="section section-about" id="nosotros">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fadeInUp">
+                <span class="section-tag"><i class="fas fa-info-circle"></i> Conócenos</span>
+                <h2 class="section-title">¿Quiénes <span class="text-gradient">Somos</span>?</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-images animate-on-scroll" data-animation="fadeInLeft">
+                    <div class="about-img-main">
+                        <img src="img/tecnico-trabajo.png" alt="Técnico F&R Services" loading="lazy">
+                        <div class="about-img-overlay">
+                            <div class="experience-badge">
+                                <span class="exp-number">15+</span>
+                                <span class="exp-text">Años de<br>Experiencia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="img/tecnico-reparacion.png" alt="Reparación de equipos" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="about-content animate-on-scroll" data-animation="fadeInRight">
+                    <h3 class="about-subtitle">F&R Services</h3>
+                    <p class="about-text">
+                        Somos una empresa especializada en <strong>refrigeración y aire acondicionado</strong>, 
+                        dedicada a brindar soluciones integrales de climatización para hogares, comercios e industrias.
+                    </p>
+                    <p class="about-text">
+                        Contamos con un equipo de técnicos altamente calificados y certificados, 
+                        comprometidos con ofrecer un servicio de excelencia que garantice el 
+                        <strong>confort y bienestar</strong> de nuestros clientes.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="feature-info">
+                                <h4>Certificados</h4>
+                                <p>Personal técnico certificado</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="feature-info">
+                                <h4>Garantía</h4>
+                                <p>Garantía en todos los trabajos</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                            <div class="feature-info">
+                                <h4>Puntualidad</h4>
+                                <p>Servicio rápido y eficiente</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                            <div class="feature-info">
+                                <h4>Equipamiento</h4>
+                                <p>Herramientas profesionales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES SECTION ============ -->
+    <section class="section section-services" id="servicios">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fadeInUp">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Lo que hacemos</span>
+                <h2 class="section-title">Nuestros <span class="text-gradient">Servicios</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Ofrecemos una amplia gama de servicios de climatización adaptados a sus necesidades.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" data-animation="fadeInUp" data-delay="0">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="service-title">Instalación</h3>
+                    <p class="service-desc">
+                        Instalación profesional de equipos de aire acondicionado tipo split, 
+                        mini split, central y equipos de refrigeración comercial.
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Split y Mini Split</li>
+                        <li><i class="fas fa-check"></i> Aire Central</li>
+                        <li><i class="fas fa-check"></i> Equipos Comerciales</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Solicitar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card service-card-featured animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                    <div class="service-card-glow"></div>
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Mantenimiento</h3>
+                    <p class="service-desc">
+                        Mantenimiento preventivo y correctivo para mantener tus equipos 
+                        en óptimas condiciones y prolongar su vida útil.
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Limpieza Profunda</li>
+                        <li><i class="fas fa-check"></i> Recarga de Gas</li>
+                        <li><i class="fas fa-check"></i> Revisión Eléctrica</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Solicitar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-diagnoses"></i>
+                    </div>
+                    <h3 class="service-title">Reparación</h3>
+                    <p class="service-desc">
+                        Diagnóstico y reparación de fallas en equipos de todas las marcas. 
+                        Soluciones rápidas y efectivas.
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Diagnóstico Preciso</li>
+                        <li><i class="fas fa-check"></i> Repuestos Originales</li>
+                        <li><i class="fas fa-check"></i> Garantía Post-Servicio</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Solicitar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="service-title">Ductos Industriales</h3>
+                    <p class="service-desc">
+                        Diseño, fabricación e instalación de sistemas de ductos para 
+                        ventilación y climatización industrial.
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Diseño a Medida</li>
+                        <li><i class="fas fa-check"></i> Ductos en Galvanizado</li>
+                        <li><i class="fas fa-check"></i> Aislamiento Térmico</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Solicitar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="service-title">Climatización Comercial</h3>
+                    <p class="service-desc">
+                        Soluciones completas de climatización para locales comerciales, 
+                        oficinas, restaurantes y más.
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Proyecto Integral</li>
+                        <li><i class="fas fa-check"></i> Eficiencia Energética</li>
+                        <li><i class="fas fa-check"></i> Control de Temperatura</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Solicitar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-animation="fadeInUp" data-delay="500">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3 class="service-title">Refrigeración</h3>
+                    <p class="service-desc">
+                        Servicio técnico especializado en cuartos fríos, exhibidoras, 
+                        neveras comerciales y sistemas de refrigeración.
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Cuartos Fríos</li>
+                        <li><i class="fas fa-check"></i> Exhibidoras</li>
+                        <li><i class="fas fa-check"></i> Neveras Comerciales</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Solicitar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GALLERY SECTION ============ -->
+    <section class="section section-gallery" id="galeria">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fadeInUp">
+                <span class="section-tag"><i class="fas fa-images"></i> Portafolio</span>
+                <h2 class="section-title">Nuestra <span class="text-gradient">Galería</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Una muestra de nuestros trabajos realizados con excelencia y dedicación.</p>
+            </div>
+
+            <div class="gallery-swiper swiper animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="img/condensadores-premium-lg.png" alt="Instalación de condensadores Premium y LG" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Instalación de Condensadores</h4>
+                                    <p>Unidades exteriores Premium y LG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="img/ductos-industriales.png" alt="Sistema de ductos industriales" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Ductos Industriales</h4>
+                                    <p>Sistema de ventilación industrial</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="img/ductos-tienda.png" alt="Climatización comercial con ductos" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Climatización Comercial</h4>
+                                    <p>Sistema de ductos para local comercial</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="img/condensadores-lg.png" alt="Instalación de condensadores LG" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Condensadores LG</h4>
+                                    <p>Instalación en soporte metálico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="img/tecnico-trabajo.png" alt="Técnico en trabajo de altura" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Trabajo en Alturas</h4>
+                                    <p>Técnico certificado con arnés de seguridad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="img/equipo-comercial.png" alt="Equipo de refrigeración comercial" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Equipo Comercial</h4>
+                                    <p>Unidad de climatización rooftop</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="img/tecnico-reparacion.png" alt="Reparación de equipo Hyundai" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Servicio Técnico</h4>
+                                    <p>Reparación y mantenimiento especializado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ BRANDS SECTION ============ -->
+    <section class="section section-brands" id="marcas">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fadeInUp">
+                <span class="section-tag"><i class="fas fa-award"></i> Aliados</span>
+                <h2 class="section-title">Marcas que <span class="text-gradient">Trabajamos</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="brands-carousel animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                <div class="brands-track">
+                    <div class="brand-item"><span>LG</span></div>
+                    <div class="brand-item"><span>Samsung</span></div>
+                    <div class="brand-item"><span>Premium</span></div>
+                    <div class="brand-item"><span>Hyundai</span></div>
+                    <div class="brand-item"><span>Daewoo</span></div>
+                    <div class="brand-item"><span>Whirlpool</span></div>
+                    <div class="brand-item"><span>GPlus</span></div>
+                    <div class="brand-item"><span>Carrier</span></div>
+                    <!-- Duplicate for infinite scroll -->
+                    <div class="brand-item"><span>LG</span></div>
+                    <div class="brand-item"><span>Samsung</span></div>
+                    <div class="brand-item"><span>Premium</span></div>
+                    <div class="brand-item"><span>Hyundai</span></div>
+                    <div class="brand-item"><span>Daewoo</span></div>
+                    <div class="brand-item"><span>Whirlpool</span></div>
+                    <div class="brand-item"><span>GPlus</span></div>
+                    <div class="brand-item"><span>Carrier</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA SECTION ============ -->
+    <section class="section section-cta">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-content animate-on-scroll" data-animation="fadeInUp">
+                <h2 class="cta-title">¿Necesitas un servicio de <span class="text-gradient">climatización</span>?</h2>
+                <p class="cta-text">Contáctanos ahora y recibe una cotización gratuita para tu proyecto.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/584128823" class="btn btn-whatsapp btn-glow" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp Directo</span>
+                    </a>
+                    <a href="tel:+584128823" class="btn btn-outline-light">
+                        <i class="fas fa-phone"></i>
+                        <span>Llamar Ahora</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section section-contact" id="contacto">
+        <div class="container">
+            <div class="section-header animate-on-scroll" data-animation="fadeInUp">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Escríbenos</span>
+                <h2 class="section-title">Solicita tu <span class="text-gradient">Cotización</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll" data-animation="fadeInLeft">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+584128823">0412-882.3XXX</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/584128823" target="_blank" rel="noopener">0412-882.3XXX</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@fyrservices.com">info@fyrservices.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Ubicación</h4>
+                            <p>Venezuela</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-on-scroll" data-animation="fadeInRight" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="0412-XXX-XXXX" required>
+                            <span class="form-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Servicio Requerido</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="" disabled selected>Selecciona un servicio</option>
+                            <option value="instalacion">Instalación</option>
+                            <option value="mantenimiento">Mantenimiento</option>
+                            <option value="reparacion">Reparación</option>
+                            <option value="ductos">Ductos Industriales</option>
+                            <option value="comercial">Climatización Comercial</option>
+                            <option value="refrigeracion">Refrigeración</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe tu necesidad..." required></textarea>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow btn-full">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,40 1440,60 L1440,120 L0,120 Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/logo-azul.png" alt="F&R Services" class="footer-logo">
+                    <p>Soluciones integrales en refrigeración y aire acondicionado para hogares, comercios e industrias.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/584128823" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Instalación</a></li>
+                        <li><a href="#servicios">Mantenimiento</a></li>
+                        <li><a href="#servicios">Reparación</a></li>
+                        <li><a href="#servicios">Ductos Industriales</a></li>
+                        <li><a href="#servicios">Refrigeración</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 0412-882.3XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@fyrservices.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Venezuela</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 F&R Services. Todos los derechos reservados.</p>
+                <p>Diseñado con <i class="fas fa-heart" style="color: #00a0e3;"></i> por F&R Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ============ WHATSAPP FLOAT ============ -->
+    <a href="https://wa.me/584128823" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¡Chatea con nosotros!</span>
+    </a>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+        <img src="" alt="" class="lightbox-img">
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
