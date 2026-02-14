@@ -1839,23 +1839,43 @@ ul {
         gap: 40px;
     }
 
+    .about-images {
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
     .about-img-main img {
         height: 300px;
     }
 
     .about-img-secondary {
-        width: 130px;
-        height: 130px;
-        left: -10px;
-        bottom: -15px;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        left: 0;
+        bottom: auto;
+        margin-top: -40px;
+        margin-left: 16px;
+        z-index: 2;
+    }
+
+    .about-img-overlay {
+        bottom: auto;
+        top: 16px;
+        right: 16px;
     }
 
     .experience-badge {
-        padding: 12px 16px;
+        padding: 10px 14px;
     }
 
     .exp-number {
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .exp-text {
+        font-size: 0.7rem;
     }
 
     .about-subtitle {
@@ -2175,8 +2195,8 @@ ul {
     .about-img-secondary {
         width: 100px;
         height: 100px;
-        bottom: -12px;
-        left: -6px;
+        margin-top: -30px;
+        margin-left: 12px;
         border-width: 3px;
     }
 
